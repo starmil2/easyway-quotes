@@ -1,22 +1,42 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import quotes from './quotes.txt'
 
-function App() {
+
+
+const App = () => {
+  const [quote, setQuote] = useState('')
+
+  const handleButton = () => {
+    fetch(quotes).then((response) => response.text())
+      .then((data) => {
+        // read file lines here
+        const fileLines = data.split('\n')
+        // find the value you are looking for and compare it to the value you get from the database
+        setQuote(fileLines[Math.floor(Math.random() * fileLines.length)])
+      })
+  }
+
+  useEffect(() => {
+    handleButton()
+  }, [])
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {quote}
         </p>
-        <a
+        <span
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          role={'button'}
+          style={{ cursor: 'pointer' }}
+          onClick={handleButton}
         >
-          Learn React
-        </a>
+          Show next
+        </span>
       </header>
     </div>
   );
