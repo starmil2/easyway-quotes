@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/easyway-quotes/static/css/main.f152c6ba.css",
-    "main.js": "/easyway-quotes/static/js/main.f77ea337.js",
-    "static/js/787.27f48d4b.chunk.js": "/easyway-quotes/static/js/787.27f48d4b.chunk.js",
+    "main.js": "/easyway-quotes/static/js/main.12b162cd.js",
     "static/media/quotes.txt": "/easyway-quotes/static/media/quotes.b6aa709181e3f8eaaccd.txt",
     "index.html": "/easyway-quotes/index.html",
     "main.f152c6ba.css.map": "/easyway-quotes/static/css/main.f152c6ba.css.map",
-    "main.f77ea337.js.map": "/easyway-quotes/static/js/main.f77ea337.js.map",
-    "787.27f48d4b.chunk.js.map": "/easyway-quotes/static/js/787.27f48d4b.chunk.js.map"
+    "main.12b162cd.js.map": "/easyway-quotes/static/js/main.12b162cd.js.map"
   },
   "entrypoints": [
     "static/css/main.f152c6ba.css",
-    "static/js/main.f77ea337.js"
+    "static/js/main.12b162cd.js"
   ]
 }
