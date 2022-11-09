@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import quotes from './quotes.txt'
 
-
-
 const App = () => {
   const [quote, setQuote] = useState('')
 
